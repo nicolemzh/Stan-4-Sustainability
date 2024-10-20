@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <div className = "nav">
             <Link to="/home">
-                <img className="logo" src={logo} width={75} height={75} style={{borderRadius: '50%', objectFit: 'cover', cursor: 'pointer',}}/>
+                <img className="logo" src={logo} width={125} height={125} style={{borderRadius: '20%', objectFit: 'cover', cursor: 'pointer',}}/>
             </Link>
             <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', padding: '35px' }}>
                 <Stack  direction="row" spacing={2}>

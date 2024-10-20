@@ -53,6 +53,9 @@ class CelebrityChart extends Component {
       return <div>Loading...</div>; // Show loading message while fetching data
     }
 
+    const sortedData = co2Data.sort((a, b) => b.totalEmissions - a.totalEmissions);
+
+
     // Ensure there is at least one value in the array before using Math.max
     const maxCO2 = co2Data.length > 0 ? Math.max(...co2Data.map(item => item.totalEmissions)) : 1;
 
@@ -63,7 +66,7 @@ class CelebrityChart extends Component {
             <span className="label">{`${item.totalEmissions} · ${item.celebrity}`}</span>
             <div
               className="bar-fill"
-              style={{ width: `${(item.totalEmissions / maxCO2) * 100}%` }}
+              style={{ width: `${(item.totalEmissions / maxCO2) * 50}%` }}
             ></div>
           </div>
         ))}

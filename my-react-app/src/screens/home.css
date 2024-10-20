@@ -1,34 +1,28 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: auto;
+    width:100%;
+    display: flex;
     background-color: white;
+    overflow: auto;
 }
   
-.main {
-    box-sizing: inherit;
-    width: 100vw;
-    height: 100%;
-    background-color: white; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+.main { 
+    padding-top: 100px;
 }
 
 .intro {
-    box-sizing: inherit;
-    display: flex;
-    width: 100vw;
-    height: 500px;
-    padding: 100px;
     background-color: #c5ffc5;
     align-items: center;
     justify-content: space-between;
+    width:100vw;
+    height: 450px;
+    padding-left: 50px;
 }
 
 .text {
-    padding: 50px;
+    padding-left: 50px;
 }
 
 .motto {
@@ -36,8 +30,8 @@ html, body {
     font-size: 3vw;
     color: rgb(22, 80, 59);
     text-shadow: 2px 2px 4px grey !important;
-    font-family: 'DM SANS' !important;
-    padding-left: 40px;
+    font-family: 'courier new' !important;
+    padding-left: 5px;
 }
 
 .typewriter {
@@ -69,7 +63,7 @@ html, body {
   
   @keyframes typing2 {
     from { width: 0; }
-    to { width: 40%; }
+    to { width: 50%; }
   }
   
   @keyframes blink-caret {
@@ -79,5 +73,10 @@ html, body {
 
 .logo {
     display: flex;
-    padding-right: 70px;
+    padding-right: 50px;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-evenly;
 }
