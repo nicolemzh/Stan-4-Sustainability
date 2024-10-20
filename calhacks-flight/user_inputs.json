@@ -1,5 +1,5 @@
 {
-  "total_emissions": 10.233,
+  "total_emissions": 50.82540000000001,
   "products": [],
   "celebrities": {
     "noor": {
@@ -14,7 +14,7 @@
       ]
     },
     "taylor": {
-      "total_emissions": 6.822,
+      "total_emissions": 47.41440000000001,
       "products": [
         {
           "barcode": "038000219634",
@@ -27,6 +27,83 @@
           "product_name": "Frosted Flakes",
           "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
           "carbon_emission": 3.411
+        },
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 7.62,
+          "carbon_emission_saved": 3.0784800000000003
+        },
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 15,
+          "carbon_emission_saved": 0.84
+        },
+        {
+          "mode_of_transportation": "bike",
+          "distance_traveled": 20,
+          "carbon_emission_saved": 4.2
+        },
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 7.62,
+          "carbon_emission_saved": 3.0784800000000003
+        },
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 15,
+          "carbon_emission_saved": 0.84
+        },
+        {
+          "mode_of_transportation": "bike",
+          "distance_traveled": 20,
+          "carbon_emission_saved": 4.2
+        },
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 7.62,
+          "carbon_emission_saved": 3.0784800000000003
+        },
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 15,
+          "carbon_emission_saved": 0.84
+        },
+        {
+          "mode_of_transportation": "bike",
+          "distance_traveled": 20,
+          "carbon_emission_saved": 4.2
+        }
+      ],
+      "transportation": [
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 7.62,
+          "carbon_emission_saved": 3.0784800000000003
+        },
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 15,
+          "carbon_emission_saved": 0.84
+        },
+        {
+          "mode_of_transportation": "bike",
+          "distance_traveled": 20,
+          "carbon_emission_saved": 4.2
+        },
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 7.62,
+          "carbon_emission_saved": 3.0784800000000003
+        },
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 15,
+          "carbon_emission_saved": 0.84
+        },
+        {
+          "mode_of_transportation": "bike",
+          "distance_traveled": 20,
+          "carbon_emission_saved": 4.2
         }
       ]
     }
