@@ -40,7 +40,7 @@ const idToJet = {
 
 // Map of plane type to CO2 emissions (multiplied by a constant factor for emission rate)
 const jetEmissionRates = {
-  'FALCON_7X': 1170.04 * 3.16,
+  'FALCON_7X': 1170.04 * 1.8,
   'BOEING_767': 3573.95 * 3.16,
   'EMBRAER_190': 1960.20 * 3.16,
   'CHALLENGER_850': 1051.52 * 3.16,

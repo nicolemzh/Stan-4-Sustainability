@@ -23,7 +23,7 @@ function Home() {
             </div>
           </div>
           <Marquee
-            className="h-64 w-96.25 ml-28 overflow-hidden [--duration:45s] [--gap:1rem]"
+            className="h-64 w-96 ml-28 overflow-hidden [--duration:45s] [--gap:1rem]"
             vertical
             style={{
               transform:
