@@ -1,0 +1,89 @@
+/* Apply a modern font and general styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* width: 500vw; */
+  }
+  
+  .fan-container {
+    width: 100vw;
+    /* max-width: 2000px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #108d4c;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #2b3a42;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .data-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .data-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  p strong {
+    color: #000;
+  }
+  
+  .emoji {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Description box */
+  .description {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 10px;
+    background-color: #e7f3ff;
+    border-radius: 10px;
+    border-left: 6px solid #138c53;
+  }
+  
+  /* Loading or no data message */
+  p.no-data {
+    text-align: center;
+    font-size: 22px;
+    color: #ff4d4d;
+    margin-top: 30px;
+  }
+  
+  /* Style for each celebrity section */
+  .celebrity-section {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .celebrity-section:last-child {
+    border-bottom: none;
+  }
+  

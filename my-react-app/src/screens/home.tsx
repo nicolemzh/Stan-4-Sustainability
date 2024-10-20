@@ -6,6 +6,7 @@ import celebrities3 from "../assets/celebrities_3.jpg";
 import celebrities4 from "../assets/celebrities_4.jpg";
 import title from "../assets/title.png";
 import CelebrityChart from "../components/celebritychart.tsx";
+import UserChart from "../components/userchart.tsx";
 import FanSubmissionForm from "../components/fansubmissionform.tsx";
 import "./home.css";
 import Marquee from "../components/ui/marquee";
@@ -38,15 +39,22 @@ function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-2 py-8 justify-center items-center">
-        <div className="charts">
-          <div className="celebrities">
-            <h1 style={{ color: "black", fontSize: "40px" }}>
-              CO2 Emissions (kg) from Celebrity Jets
-            </h1>
-            <CelebrityChart />
-          </div>
-          <div className="fanbase"></div>
-        </div>
+      <div className="charts flex w-full items-center">
+  <div className="celebrities w-1/2 p-4 flex flex-col items-center">
+    <h1 style={{ color: "black", fontSize: "40px", marginLeft: "20px" }}>
+      CO2 Emissions (kg) from Celebrity Jets
+    </h1>
+    <CelebrityChart />
+  </div>
+  <div className="fanbase w-1/2 flex flex-col items-center">
+    <h1 style={{ color: "black", fontSize: "40px", marginRight: "20px" }}>
+      Offset CO2 Emissions from Fan Base
+    </h1>
+    <UserChart />
+  </div>
+</div>
+
+
         <div className="input">
           <FanSubmissionForm />
         </div>

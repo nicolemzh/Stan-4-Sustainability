@@ -144,6 +144,9 @@ app.get('/calculate_emissions/:barcode/:celebrity', async (req, res) => {
         if (!data.celebrities[celebrity]) {
             data.celebrities[celebrity] = { total_emissions: 0, products: [] };
         }
+        if (!Array.isArray(data.celebrities[celebrity].products)) {
+            data.celebrities[celebrity].products = [];  // Initialize products array if undefined
+        }
 
         // Update celebrity's total emissions and product list
         data.celebrities[celebrity].total_emissions += emissions;
@@ -178,6 +181,7 @@ app.get('/calculate_emissions/:barcode/:celebrity', async (req, res) => {
         res.status(500).json({ error: 'An error occurred while processing the request.' });
     }
 });
+
 
 
 // Get total emissions and product details from JSON file

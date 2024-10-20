@@ -1,217 +1,10 @@
 {
-  "total_emissions": 2976.19059544,
+  "total_emissions": 7694.059262448,
   "products": [],
   "celebrities": {
-    "noor": {
-      "total_emissions": 3.411,
+    "Jim Carrey": {
+      "total_emissions": 10.691,
       "products": [
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        }
-      ]
-    },
-    "taylor": {
-      "total_emissions": 6.822,
-      "products": [
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "q3r",
-          "product_name": "Feuchtes Toilettentuch - Kamille",
-          "category": "Unknown",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "q3r",
-          "product_name": "Feuchtes Toilettentuch - Kamille",
-          "category": "Unknown",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        }
-      ]
-    },
-    "DRAKE": {
-      "total_emissions": 10.233,
-      "products": [
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        }
-      ]
-    },
-    "TAYLOR_SWIFT": {
-      "total_emissions": 89.53696000000004,
-      "products": [
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "q3r",
-          "product_name": "Feuchtes Toilettentuch - Kamille",
-          "category": "Unknown",
-          "carbon_emission": 15.16
-        },
         {
           "barcode": "038000219634",
           "product_name": "Frosted Flakes",
@@ -221,94 +14,54 @@
       ],
       "transportation": [
         {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 3.81,
-          "carbon_emission_saved": 1.5392400000000002
-        },
-        {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 3.81,
-          "carbon_emission_saved": 1.5392400000000002
-        },
-        {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 3.81,
-          "carbon_emission_saved": 1.5392400000000002
-        },
-        {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 3.81,
-          "carbon_emission_saved": 1.5392400000000002
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 130,
+          "carbon_emission_saved": 7.28
         }
       ]
     },
     "Taylor Swift": {
-      "total_emissions": 2866.18763544,
-      "products": [
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        },
-        {
-          "barcode": "q3r",
-          "product_name": "Feuchtes Toilettentuch - Kamille",
-          "category": "Unknown",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "q3r",
-          "product_name": "Feuchtes Toilettentuch - Kamille",
-          "category": "Unknown",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "038000219634",
-          "product_name": "Frosted Flakes",
-          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
-          "carbon_emission": 3.411
-        }
-      ],
+      "total_emissions": 382.507445144,
       "transportation": [
         {
           "mode_of_transportation": "steps",
-          "distance_traveled": 0.02286,
-          "carbon_emission_saved": 0.00923544
+          "distance_traveled": 9410.092686,
+          "carbon_emission_saved": 3801.677445144
         },
         {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 38.1,
-          "carbon_emission_saved": 15.392400000000002
-        },
+          "mode_of_transportation": "bike",
+          "distance_traveled": 123,
+          "carbon_emission_saved": 25.83
+        }
+      ]
+    },
+    "Tom Cruise": {
+      "total_emissions": 5.6000000000000005,
+      "transportation": [
         {
           "mode_of_transportation": "public transport",
-          "distance_traveled": 50000,
-          "carbon_emission_saved": 2800
+          "distance_traveled": 100,
+          "carbon_emission_saved": 5.6000000000000005
+        }
+      ]
+    },
+    "Drake": {
+      "total_emissions": 48.608000000000004,
+      "transportation": [
+        {
+          "mode_of_transportation": "public transport",
+          "distance_traveled": 868,
+          "carbon_emission_saved": 48.608000000000004
+        }
+      ]
+    },
+    "Travis Scott": {
+      "total_emissions": 3801.652817304,
+      "transportation": [
+        {
+          "mode_of_transportation": "steps",
+          "distance_traveled": 9410.031726,
+          "carbon_emission_saved": 3801.652817304
         }
       ]
     }

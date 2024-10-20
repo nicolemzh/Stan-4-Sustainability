@@ -1,0 +1,41 @@
+.bar-chart {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(2, 0, 0);
+    font-family: 'trebuchet ms' !important;
+  }
+  
+  .bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+  
+  .label {
+    width: 30%;
+    font-size: 1rem;
+    margin-left: 10px;
+    text-align: right;
+  }
+  
+  .bar-fill-2 {
+    height: 30px;
+    background: linear-gradient(90deg, #088d40, #29d2b9, #28b8ec);
+    border-radius: 5px;
+    width: 0; /* Start with 0 width and grow to the right */
+  }
+  
+  @media (max-width: 600px) {
+    .label {
+      font-size: 0.85rem;
+    }
+  
+    .bar-fill {
+      height: 20px;
+    }
+  }
+  

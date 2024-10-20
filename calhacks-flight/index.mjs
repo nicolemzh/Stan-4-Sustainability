@@ -38,7 +38,7 @@ const idToJet = {
 
 // mapping between plane type and fuel consumption per hour * co2 constant converter
 const jetEmissionRates = {
-  'FALCON_7X': 1170.04 * 1.8, // note that taylor swift was manually adjusted. true constant value is 3.16.
+  'FALCON_7X': 1170.04 * 3.0, // note that taylor swift was manually adjusted. true constant value is 3.16.
   'BOEING_767': 3573.95 * 3.16,
   'EMBRAER_190': 1960.20 * 3.16,
   'CHALLENGER_850': 1051.52 * 3.16,

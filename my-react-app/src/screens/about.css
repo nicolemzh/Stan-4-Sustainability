@@ -1,0 +1,32 @@
+.about-container {
+    padding: 50px;
+    max-width: 100vw;
+    margin: auto;
+    align-items: center;
+    font-family: 'trebuchet ms' !important;
+}
+
+.about-title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    
+}
+
+.about-h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
