@@ -2,11 +2,13 @@ import axios from 'axios';
 import express from 'express';
 import dotenv from 'dotenv';
 import fs from 'fs/promises';
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const jsonFile = 'user_inputs.json';
 
