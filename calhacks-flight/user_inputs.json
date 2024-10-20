@@ -1,0 +1,34 @@
+{
+  "total_emissions": 10.233,
+  "products": [],
+  "celebrities": {
+    "noor": {
+      "total_emissions": 3.411,
+      "products": [
+        {
+          "barcode": "038000219634",
+          "product_name": "Frosted Flakes",
+          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
+          "carbon_emission": 3.411
+        }
+      ]
+    },
+    "taylor": {
+      "total_emissions": 6.822,
+      "products": [
+        {
+          "barcode": "038000219634",
+          "product_name": "Frosted Flakes",
+          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
+          "carbon_emission": 3.411
+        },
+        {
+          "barcode": "038000219634",
+          "product_name": "Frosted Flakes",
+          "category": "Plant-based foods and beverages, Plant-based foods, Breakfasts, Cereals and potatoes, Cereals and their products, Breakfast cereals, Flakes, Cereal flakes, Extruded cereals, Extruded flakes, Corn flakes",
+          "carbon_emission": 3.411
+        }
+      ]
+    }
+  }
+}

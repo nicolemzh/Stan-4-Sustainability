@@ -1,0 +1,36 @@
+.bar-chart {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .label {
+    width: 30%;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .bar-fill {
+    height: 30px;
+    background: linear-gradient(90deg, #ffcc00, #ff6600, #ff3300);
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .label {
+      font-size: 0.85rem;
+    }
+  
+    .bar-fill {
+      height: 20px;
+    }
+  }

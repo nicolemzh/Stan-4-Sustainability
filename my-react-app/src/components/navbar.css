@@ -1,0 +1,20 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c5ffc5;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+  .logo {
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #013f1aaa);
+  }

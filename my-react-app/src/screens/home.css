@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+  
+.main {
+    box-sizing: inherit;
+    width: 100vw;
+    height: 100%;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.intro {
+    box-sizing: inherit;
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    padding: 100px;
+    background-color: #c5ffc5;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    padding: 50px;
+}
+
+.motto {
+    font-weight: 500 !important;
+    font-size: 3vw;
+    color: rgb(22, 80, 59);
+    text-shadow: 2px 2px 4px grey !important;
+    font-family: 'DM SANS' !important;
+    padding-left: 40px;
+}
+
+.typewriter {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+.typewriter h2 {
+    border-right: 0.15em solid #333; 
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    line-height: 1.1;
+    width: 0; 
+    animation:
+    typing 3.5s steps(40, end) forwards,
+    blink-caret .75s step-end infinite;
+    display: inline-block;
+  }
+  
+  .typewriter h2:last-child {
+    animation: typing2 3s steps(30, end) 1s forwards, blink-caret 0.75s step-end infinite;
+    width: 0; 
+  }
+  
+  @keyframes typing2 {
+    from { width: 0; }
+    to { width: 40%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+  }
+
+.logo {
+    display: flex;
+    padding-right: 70px;
+}
