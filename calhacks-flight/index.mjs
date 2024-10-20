@@ -1,20 +1,18 @@
 import express from 'express';
-import cors from 'cors'; // Import cors middleware
+import cors from 'cors';
 import fs from 'fs';
 
-// Initialize the express app
 const app = express();
 const port = 3000;
 
-// Use CORS middleware
-app.use(cors()); // This allows all origins to access the API
+app.use(cors()); // cors needed so noor doesn't run into issues
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Carbon Footprint API!');
 });
 
 
-// Map of celebrity to plane type
+// mapping between celebrity and plane types
 const celebToJet = {
   'TAYLOR_SWIFT': 'FALCON_7X',
   'DRAKE': 'BOEING_767',
@@ -26,7 +24,7 @@ const celebToJet = {
   'TOM_CRUISE': 'CHALLENGER_350',
 };
 
-// Map of plane IDs to plane type
+// mapping between private jet ids and plane types
 const idToJet = {
   'N621MM': 'FALCON_7X',
   'N767CJ': 'BOEING_767',
@@ -38,9 +36,9 @@ const idToJet = {
   'N350XX': 'CHALLENGER_350',
 };
 
-// Map of plane type to CO2 emissions (multiplied by a constant factor for emission rate)
+// mapping between plane type and fuel consumption per hour * co2 constant converter
 const jetEmissionRates = {
-  'FALCON_7X': 1170.04 * 1.8,
+  'FALCON_7X': 1170.04 * 1.8, // note that taylor swift was manually adjusted. true constant value is 3.16.
   'BOEING_767': 3573.95 * 3.16,
   'EMBRAER_190': 1960.20 * 3.16,
   'CHALLENGER_850': 1051.52 * 3.16,
@@ -50,19 +48,18 @@ const jetEmissionRates = {
   'CHALLENGER_350': 902.60 * 3.16,
 };
 
-// Calculate Carbon Footprint
 function calculateCarbonFootprint(planeType, distance) {
   const emissionRatePerHour = jetEmissionRates[planeType];
   if (!emissionRatePerHour) {
     return 0;
   }
-  const flightDuration = distance / 500; // Duration in hours (assuming 500 km/h speed)
-  return emissionRatePerHour * flightDuration; // CO2 emissions in kg
+  const flightDuration = distance / 500;
+  return emissionRatePerHour * flightDuration;
 }
 
-// Function to calculate distance between two coordinates (using Haversine formula)
+// coordinate distance calculations
 function calculateDistance(departureCoords, arrivalCoords) {
-  const R = 6371; // Radius of the Earth in km
+  const R = 6371;
   const lat1 = departureCoords.latitude;
   const lon1 = departureCoords.longitude;
   const lat2 = arrivalCoords.latitude;
@@ -84,10 +81,10 @@ function calculateDistance(departureCoords, arrivalCoords) {
       Math.sin(dlon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
-  return R * c; // Distance in km
+  return R * c;
 }
 
-// API endpoint to get the carbon footprint for a specific celebrity
+// api information for frontend to access data
 app.get('/carbon-footprint/:celebrity', async (req, res) => {
   const celebrity = req.params.celebrity.toUpperCase();
 
@@ -100,39 +97,31 @@ app.get('/carbon-footprint/:celebrity', async (req, res) => {
 
   const celebJet = celebToJet[celebrity];
 
-  // Read flight data (you may want to update the path or data source)
   const flightData = JSON.parse(fs.readFileSync('flights.json', 'utf8'));
-
-  // Initialize total emissions
   let totalEmissions = 0;
 
-  // Loop through flight data and calculate emissions
   for (const flight of flightData) {
     const planeId = flight.callsign;
     const distance = calculateDistance(flight.departureCoords, flight.arrivalCoords);
 
-    // Get the plane type
     const planeType = idToJet[planeId];
     if (!planeType || planeType !== celebJet) {
       continue;
     }
 
-    // Calculate the carbon footprint for the flight
     const carbonFootprint = calculateCarbonFootprint(planeType, distance);
     if (!isNaN(carbonFootprint)) {
       totalEmissions += carbonFootprint;
     }
   }
-
-  // Send the response with total emissions for the celebrity
   res.json({
     success: true,
     celebrity,
-    totalEmissions: totalEmissions.toFixed(2), // Emissions in kg CO2e
+    totalEmissions: totalEmissions.toFixed(2), 
   });
 });
 
-// Start the server
+// starting server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
