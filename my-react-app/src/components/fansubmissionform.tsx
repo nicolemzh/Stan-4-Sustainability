@@ -25,82 +25,102 @@ const style = {
   pb: 3,
 };
 
-function TransportationModal({ onClose, celebrity }) {
+function TransportationModal({ onClose, celebrity, updateChart }) {
   const [transportationMode, setTransportationMode] = React.useState('');
   const [inputValue, setInputValue] = React.useState('');
+  const [contributionMessage, setContributionMessage] = React.useState('');
+  const [showConfetti, setShowConfetti] = React.useState(false);
 
   const handleSubmit = async () => {
     try {
-      await axios.post('http://localhost:3003/calculate_emissions', {
-        celebrity: celebrity,
-        category: 'transportation',
+      const requestData = {
+        celebrity,
         mode: transportationMode,
-        inputValue: inputValue,
-      });
-      onClose();
+        distanceOrSteps: inputValue
+      };
+
+      console.log('Submitting request:', requestData);
+
+      // Make the API call to save data
+      const response = await axios.post(`http://localhost:3005/save_transportation/${transportationMode}/${inputValue}/${celebrity}`, requestData);
+
+      // Assuming response.data contains { co2Saved, totalEmissionsForCelebrity, totalEmissions }
+      const { co2Saved, totalEmissionsForCelebrity, totalEmissions } = response.data;
+
+      // Update the contribution message based on the response
+      setContributionMessage(`🎉 Congrats! You saved ${co2Saved.toFixed(2)} kg CO2! ${celebrity}'s total emissions are now ${totalEmissionsForCelebrity.toFixed(2)} kg, and the total saved emissions are ${totalEmissions.toFixed(2)} kg! 🌍`);
+
+      // Show confetti on successful submission
+      setShowConfetti(true);
+
+      // Hide confetti after 3 seconds
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 3000);
+
+      // Call the updateChart function to update the emissions chart
+      if (updateChart) {
+        updateChart(); // Ensure the chart updates with the latest data
+      }
+
     } catch (error) {
       console.error('Error submitting transportation data:', error);
     }
   };
 
   return (
-    <Modal open={true} onClose={onClose} aria-labelledby="transport-modal-title">
-      <Box sx={{ ...style, width: 300 }}>
-        <h2 id="transport-modal-title">Sustainable Transportation</h2>
-        <FormControl fullWidth>
-          <InputLabel id="transport-mode-label">Transport Mode</InputLabel>
-          <Select
-            labelId="transport-mode-label"
-            value={transportationMode}
-            onChange={(e) => setTransportationMode(e.target.value)}
-          >
-            <MenuItem value="steps">Steps</MenuItem>
-            <MenuItem value="public-transport">Public Transport</MenuItem>
-            <MenuItem value="bike">Bike</MenuItem>
-          </Select>
-        </FormControl>
-        <TextField
-          label="Input your data"
-          fullWidth
-          margin="normal"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <Button onClick={handleSubmit}>Submit</Button>
-      </Box>
-    </Modal>
+    <>
+      {/* Confetti that appears after submission */}
+      {showConfetti && <Confetti />}
+
+      <Modal open={true} onClose={onClose} aria-labelledby="transport-modal-title">
+        <Box sx={{ ...style, width: 600 }}>
+          <h2 id="transport-modal-title">Sustainable Transportation</h2>
+
+          {/* Select Mode of Transport */}
+          <FormControl fullWidth margin="normal">
+            <InputLabel id="transport-mode-label">Transport Mode</InputLabel>
+            <Select
+              labelId="transport-mode-label"
+              value={transportationMode}
+              onChange={(e) => setTransportationMode(e.target.value)}
+            >
+              <MenuItem value="steps">Steps</MenuItem>
+              <MenuItem value="public transport">Public Transport</MenuItem>
+              <MenuItem value="bike">Bike</MenuItem>
+            </Select>
+          </FormControl>
+
+          {/* Input Field for Steps or Distance */}
+          <TextField
+            label={transportationMode === 'steps' ? 'Enter number of steps' : 'Enter distance in km'}
+            fullWidth
+            margin="normal"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+
+          {/* Submit Button */}
+          <Button onClick={handleSubmit} sx={{ mt: 2 }}>
+            Submit
+          </Button>
+
+          {/* Show Contribution Message After Submission */}
+          {contributionMessage && (
+            <Box mt={2}>
+              <p>{contributionMessage}</p>
+            </Box>
+          )}
+
+          {/* Close Button */}
+          <Button onClick={onClose} sx={{ mt: 2, backgroundColor: 'green', color: 'white', '&:hover': { backgroundColor: 'darkgreen' } }}>
+            Close
+          </Button>
+        </Box>
+      </Modal>
+    </>
   );
 }
-
-// function FoodWasteModal({ onClose, celebrity }) {
-//   const [barcode, setBarcode] = React.useState('');
-
-//   const handleSubmit = async () => {
-//     try {
-//       // Adjust the GET request to match the backend URL structure
-//       await axios.get(`http://localhost:3003/calculate_emissions/${barcode}/${celebrity}`);
-//       onClose();
-//     } catch (error) {
-//       console.error('Error submitting food waste data:', error);
-//     }
-//   };
-
-//   return (
-//     <Modal open={true} onClose={onClose} aria-labelledby="food-waste-modal-title">
-//       <Box sx={{ ...style, width: 300 }}>
-//         <h2 id="food-waste-modal-title">Sustainable Food Waste</h2>
-//         <TextField
-//           label="Product Barcode"
-//           fullWidth
-//           margin="normal"
-//           value={barcode}
-//           onChange={(e) => setBarcode(e.target.value)}
-//         />
-//         <Button onClick={handleSubmit}>Submit</Button>
-//       </Box>
-//     </Modal>
-//   );
-// }
 
 function FoodWasteModal({ onClose, celebrity }) {
   const [barcode, setBarcode] = React.useState('');
@@ -121,7 +141,7 @@ function FoodWasteModal({ onClose, celebrity }) {
       const { carbon_emission, celebrity_total_emissions, product_name } = response.data;
 
       // Set the contribution message based on API response
-      setContributionMessage(`🎉 Congrats! 🎉 You contributed ${carbon_emission.toFixed(2)} kg CO2 from ${product_name}. Now ${celebrity}'s fanbase has saved a total of ${celebrity_total_emissions.toFixed(2)} kg CO2! 🌍`);
+      setContributionMessage(`🎉 Congrats! 🎉 You saved ${carbon_emission.toFixed(2)} kg CO2 from ${product_name}. Now ${celebrity}'s fanbase has offsetted a total of ${celebrity_total_emissions.toFixed(2)} kg CO2! 🌍`);
       
       setShowConfetti(true);
 
