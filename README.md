@@ -11,13 +11,13 @@ We created a webpage that allows users to visualize the CO2 emissions of celebri
 We built our webpage using Javascript, Express.js, and Node.js for the backend, and React, Typescript, HTML/CSS for the frontend
 
 ## Built With
-climatiq
-openfoodfacts
-css
-html
-javascript
-json
-mjs
-opensky
-react
-typescript
+- climatiq
+- openfoodfacts
+- css
+- html
+- javascript
+- json
+- mjs
+- opensky
+- react
+- typescript
