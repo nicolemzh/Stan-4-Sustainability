@@ -1,5 +1,5 @@
 {
-  "total_emissions": 7921.767110448,
+  "total_emissions": 7694.059262448,
   "products": [],
   "celebrities": {
     "Jim Carrey": {
@@ -21,11 +21,11 @@
       ]
     },
     "Taylor Swift": {
-      "total_emissions": 20.827445143999995,
+      "total_emissions": 382.507445144,
       "transportation": [
         {
           "mode_of_transportation": "steps",
-          "distance_traveled": 410.092686,
+          "distance_traveled": 9410.092686,
           "carbon_emission_saved": 3801.677445144
         },
         {
@@ -33,125 +33,35 @@
           "distance_traveled": 123,
           "carbon_emission_saved": 25.83
         }
-      ],
-      "products": [
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
-        }
       ]
     },
     "Tom Cruise": {
-      "total_emissions": 15.16,
+      "total_emissions": 5.6000000000000005,
       "transportation": [
         {
           "mode_of_transportation": "public transport",
           "distance_traveled": 100,
           "carbon_emission_saved": 5.6000000000000005
-        },
-        {
-          "mode_of_transportation": "steps",
-          "distance_traveled": 0.762,
-          "carbon_emission_saved": 0.307848
-        }
-      ],
-      "products": [
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
         }
       ]
     },
     "Drake": {
-      "total_emissions": 15.72,
+      "total_emissions": 48.608000000000004,
       "transportation": [
         {
           "mode_of_transportation": "public transport",
           "distance_traveled": 868,
           "carbon_emission_saved": 48.608000000000004
-        },
-        {
-          "mode_of_transportation": "public transport",
-          "distance_traveled": 10,
-          "carbon_emission_saved": 0.56
-        }
-      ],
-      "products": [
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
-        },
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
         }
       ]
     },
     "Travis Scott": {
-      "total_emissions": 15.16,
+      "total_emissions": 3801.652817304,
       "transportation": [
         {
           "mode_of_transportation": "steps",
           "distance_traveled": 9410.031726,
           "carbon_emission_saved": 3801.652817304
-        }
-      ],
-      "products": [
-        {
-          "barcode": "012993441098",
-          "product_name": "Naturally Essenced Hi-Biscus Sparkling Water",
-          "category": "Beverages",
-          "carbon_emission": 15.16
-        }
-      ]
-    },
-    "Oprah": {
-      "total_emissions": 0,
-      "products": [
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
-        }
-      ],
-      "transportation": [
-        {
-          "mode_of_transportation": "public transport",
-          "distance_traveled": 10,
-          "carbon_emission_saved": 0.56
-        }
-      ]
-    },
-    "Dr. Phil": {
-      "total_emissions": 105,
-      "products": [
-        {
-          "barcode": "01201303",
-          "product_name": "Pepsi",
-          "category": "Bebidas,Bebidas carbonatadas,Sodas,Bebidas no alcohólicas,Bebidas de cola,Cola con azúcar,Bebidas azucaradas",
-          "carbon_emission": 15.16
-        }
-      ],
-      "transportation": [
-        {
-          "mode_of_transportation": "bike",
-          "distance_traveled": 500,
-          "carbon_emission_saved": 105
         }
       ]
     }
